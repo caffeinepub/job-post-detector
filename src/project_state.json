@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Job post analyzer application that detects suspicious job postings using NLP and machine learning, with support for text and image inputs, email domain verification, and company information lookup",
+  "architectural_notes": [
+    "Backend using Motoko instead of Flask/Python",
+    "React with TypeScript frontend",
+    "Text and image input processing required",
+    "ML model integration needed for fake post detection"
+  ],
+  "known_issues": [
+    "Original request was for Flask/Python which is not supported on this platform"
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-job-post-input-interface-that-allows-users-to-paste-job-descriptions-as-text-and-upload-images-of-job-postings",
+      "title": "Create a job post input interface that allows users to paste job descriptions as text and upload images of job postings",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-company-information-lookup-feature-that-searches-for-and-displays-basic-information-about-the-company-mentioned-in-the-job-posting-including-company-name-industry-and-verification-status",
+      "title": "Create a company information lookup feature that searches for and displays basic information about the company mentioned in the job posting, including company name, industry, and verification status",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-classification-system-that-analyzes-all-collected-signals-and-classifies-job-postings-as-either-genuine-or-potentially-fake-with-a-confidence-score-and-explanation-of-the-factors-that-influenced-the-classification",
+      "title": "Implement a classification system that analyzes all collected signals and classifies job postings as either 'Genuine' or 'Potentially Fake' with a confidence score and explanation of the factors that influenced the classification",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-with-professional-trust-building-aesthetics-using-clean-typography-organized-layouts-and-a-color-palette-that-conveys-security-and-reliability-ensuring-consistent-styling-throughout-the-analysis-interface-and-results-display",
+      "title": "Design a cohesive visual theme with professional, trust-building aesthetics using clean typography, organized layouts, and a color palette that conveys security and reliability, ensuring consistent styling throughout the analysis interface and results display",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-professional-trust-building-color-palette-with-a-vibrant-colorful-design-system-that-uses-bright-eye-catching-colors-throughout-the-application-interface",
+      "title": "Replace the current professional trust-building color palette with a vibrant, colorful design system that uses bright, eye-catching colors throughout the application interface",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-visual-appeal-of-the-jobpostinput-component-with-colorful-styling-including-gradient-backgrounds-colorful-input-borders-vibrant-button-colors-and-animated-hover-effects",
+      "title": "Enhance visual appeal of the JobPostInput component with colorful styling including gradient backgrounds, colorful input borders, vibrant button colors, and animated hover effects",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-analysisresults-component-to-use-colorful-visual-elements-including-vibrant-classification-badges-colorful-icons-gradient-backgrounds-for-result-cards-and-colorful-status-indicators",
+      "title": "Update the AnalysisResults component to use colorful visual elements including vibrant classification badges, colorful icons, gradient backgrounds for result cards, and colorful status indicators",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-analysislayout-header-and-footer-with-colorful-branding-elements-including-gradient-backgrounds-vibrant-logo-styling-and-colorful-typography-accents",
+      "title": "Redesign the AnalysisLayout header and footer with colorful branding elements including gradient backgrounds, vibrant logo styling, and colorful typography accents",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-companyinfodisplay-component-with-colorful-verification-badges-industry-icons-with-vibrant-colors-and-colorful-card-backgrounds",
+      "title": "Update the CompanyInfoDisplay component with colorful verification badges, industry icons with vibrant colors, and colorful card backgrounds",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-the-application-for-mainnet-deployment-with-production-ready-settings-and-canister-configurations",
+      "title": "Configure the application for mainnet deployment with production-ready settings and canister configurations",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-deploy-both-frontend-and-backend-canisters-to-the-internet-computer-mainnet-network",
+      "title": "Deploy both frontend and backend canisters to the Internet Computer mainnet network",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Job post input interface supporting text and image uploads",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "NLP and ML-based analysis to detect suspicious job posting patterns",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Email domain verification system",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Company information lookup and verification",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Classification system to label posts as fake or genuine",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement backend analysis logic to detect suspicious patterns in job postings using text analysis techniques, checking for common fraud indicators such as unrealistic salary promises, vague job descriptions, urgency tactics, requests for personal information upfront, poor grammar, and missing company details",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Build an email domain verification system that extracts email addresses from job postings and validates whether the domain matches legitimate business domains versus suspicious free email providers or newly registered domains",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Redesign interface with attractive, colorful styling",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Job Post Detector",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        /* Vibrant color palette using OKLCH */
+        --background: 0.98 0.01 280;
+        --foreground: 0.15 0.02 280;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 280;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 280;
+        /* Vibrant purple primary */
+        --primary: 0.55 0.25 290;
+        --primary-foreground: 0.98 0 0;
+        /* Bright cyan secondary */
+        --secondary: 0.65 0.18 220;
+        --secondary-foreground: 0.98 0 0;
+        /* Soft pink muted */
+        --muted: 0.95 0.02 330;
+        --muted-foreground: 0.45 0.05 280;
+        /* Vibrant orange accent */
+        --accent: 0.70 0.20 50;
+        --accent-foreground: 0.98 0 0;
+        /* Bright red destructive */
+        --destructive: 0.60 0.25 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.88 0.03 280;
+        --input: 0.88 0.03 280;
+        --ring: 0.55 0.25 290;
+        /* Vibrant green success */
+        --success: 0.65 0.22 150;
+        --success-foreground: 0.98 0 0;
+        /* Bright yellow warning */
+        --warning: 0.75 0.18 85;
+        --warning-foreground: 0.15 0.02 280;
+        /* Colorful chart palette */
+        --chart-1: 0.65 0.22 150;
+        --chart-2: 0.60 0.20 220;
+        --chart-3: 0.55 0.25 290;
+        --chart-4: 0.70 0.20 50;
+        --chart-5: 0.60 0.25 25;
+        /* Additional vibrant colors */
+        --vibrant-pink: 0.65 0.25 340;
+        --vibrant-blue: 0.60 0.22 240;
+        --vibrant-teal: 0.65 0.20 180;
+    }
+
+    .dark {
+        --background: 0.12 0.03 280;
+        --foreground: 0.95 0.01 280;
+        --card: 0.18 0.03 280;
+        --card-foreground: 0.95 0.01 280;
+        --popover: 0.15 0.03 280;
+        --popover-foreground: 0.95 0.01 280;
+        /* Vibrant purple primary (brighter for dark mode) */
+        --primary: 0.70 0.25 290;
+        --primary-foreground: 0.12 0.03 280;
+        /* Bright cyan secondary */
+        --secondary: 0.70 0.20 220;
+        --secondary-foreground: 0.12 0.03 280;
+        /* Muted with slight color */
+        --muted: 0.22 0.03 280;
+        --muted-foreground: 0.65 0.05 280;
+        /* Vibrant orange accent */
+        --accent: 0.75 0.22 50;
+        --accent-foreground: 0.12 0.03 280;
+        /* Bright red destructive */
+        --destructive: 0.65 0.25 25;
+        --destructive-foreground: 0.95 0.01 280;
+        --border: 0.28 0.03 280;
+        --input: 0.28 0.03 280;
+        --ring: 0.70 0.25 290;
+        /* Vibrant green success */
+        --success: 0.70 0.22 150;
+        --success-foreground: 0.12 0.03 280;
+        /* Bright yellow warning */
+        --warning: 0.80 0.18 85;
+        --warning-foreground: 0.12 0.03 280;
+        /* Colorful chart palette */
+        --chart-1: 0.70 0.22 150;
+        --chart-2: 0.65 0.20 220;
+        --chart-3: 0.70 0.25 290;
+        --chart-4: 0.75 0.22 50;
+        --chart-5: 0.65 0.25 25;
+        /* Additional vibrant colors */
+        --vibrant-pink: 0.70 0.25 340;
+        --vibrant-blue: 0.65 0.22 240;
+        --vibrant-teal: 0.70 0.20 180;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+/* Custom gradient utilities */
+@layer utilities {
+    .gradient-primary {
+        background: linear-gradient(135deg, oklch(var(--primary)) 0%, oklch(var(--vibrant-pink)) 100%);
+    }
+    
+    .gradient-secondary {
+        background: linear-gradient(135deg, oklch(var(--secondary)) 0%, oklch(var(--vibrant-teal)) 100%);
+    }
+    
+    .gradient-accent {
+        background: linear-gradient(135deg, oklch(var(--accent)) 0%, oklch(var(--warning)) 100%);
+    }
+    
+    .gradient-success {
+        background: linear-gradient(135deg, oklch(var(--success)) 0%, oklch(var(--vibrant-teal)) 100%);
+    }
+    
+    .gradient-rainbow {
+        background: linear-gradient(135deg, 
+            oklch(var(--primary)) 0%, 
+            oklch(var(--vibrant-blue)) 25%,
+            oklch(var(--vibrant-teal)) 50%,
+            oklch(var(--success)) 75%,
+            oklch(var(--accent)) 100%
+        );
+    }
+}

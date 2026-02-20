@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component with QueryClientProvider configured for production, managing job submission and analysis workflow with ThemeProvider and Toaster for notifications.",
+  "frontend/src/components/AnalysisLayout.tsx": "Layout component with colorful gradient header featuring animated shield icon, gradient text branding, and vibrant footer with animated heart icon.",
+  "frontend/src/components/JobPostInput.tsx": "Form component with colorful gradient styling, vibrant input borders with color-coded labels, animated gradient title, and colorful submit button with sparkle effects.",
+  "frontend/src/components/AnalysisResults.tsx": "Results display with vibrant classification cards featuring gradient backgrounds, colorful badges, multi-colored analysis factor indicators, and animated gradient titles.",
+  "frontend/src/components/CompanyInfoDisplay.tsx": "Company information component with vibrant gradient backgrounds, colorful verification badges, star ratings, and color-coded status indicators.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for fetching job posting analysis results from the backend.",
+  "frontend/src/hooks/useJobSubmission.ts": "Custom hook managing job posting submission logic with loading and error states.",
+  "frontend/src/hooks/useJobAnalysis.ts": "Wrapper hook that simplifies access to job analysis data using useAnalyzeJobPosting query.",
+  "frontend/src/index.css": "Global styles with vibrant OKLCH color system featuring bright purples, cyans, oranges, pinks, greens, and blues with custom gradient utilities for an attractive, colorful design.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with vibrant color tokens, custom border radii, glow shadows, display fonts, and gradient animations for a dynamic colorful theme.",
+  "frontend/index.html": "HTML entry point with production-ready SEO meta tags including Open Graph, Twitter cards, and descriptive content for mainnet deployment."
+}

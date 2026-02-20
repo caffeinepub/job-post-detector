@@ -1,0 +1,21 @@
+{
+  "kind": "build_request",
+  "title": "Deploy application to Internet Computer mainnet",
+  "projectName": "Job Post Detector",
+  "priority": "normal",
+  "requirements": [],
+  "constraints": [
+    "Must preserve existing mainnet deployment configuration",
+    "Must not modify any immutable frontend paths including hooks and UI components",
+    "Must maintain single-actor backend architecture"
+  ],
+  "nonGoals": [
+    "Adding new features or functionality",
+    "Modifying existing UI components or styling",
+    "Changing backend logic or data structures"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
